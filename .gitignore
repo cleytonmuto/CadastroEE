@@ -42,3 +42,5 @@ build/
 *.log
 *.tmp
 temp/
+/CadastroEE-ejb/dist/
+/CadastroEE-war/dist/

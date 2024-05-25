@@ -11,7 +11,7 @@ import jakarta.persistence.PersistenceContext;
 
 /**
  *
- * @author Usuario
+ * @author Cleyton
  */
 @Stateless
 public class PessoaJuridicaFacade extends AbstractFacade<PessoaJuridica> implements PessoaJuridicaFacadeLocal {

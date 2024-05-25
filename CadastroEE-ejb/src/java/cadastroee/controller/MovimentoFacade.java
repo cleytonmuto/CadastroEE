@@ -11,7 +11,7 @@ import jakarta.persistence.PersistenceContext;
 
 /**
  *
- * @author Usuario
+ * @author Cleyton
  */
 @Stateless
 public class MovimentoFacade extends AbstractFacade<Movimento> implements MovimentoFacadeLocal {

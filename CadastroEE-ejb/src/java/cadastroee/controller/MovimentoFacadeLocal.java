@@ -10,7 +10,7 @@ import jakarta.ejb.Local;
 
 /**
  *
- * @author Usuario
+ * @author Cleyton
  */
 @Local
 public interface MovimentoFacadeLocal {
