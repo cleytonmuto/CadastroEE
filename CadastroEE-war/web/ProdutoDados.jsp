@@ -48,24 +48,19 @@
         Produto produto = (Produto) request.getAttribute("produto");
         String acao = produto != null ? "alterar" : "incluir";
     %>
-
     <div class="header-section text-center">
         <h1><%=acao == "alterar" ? "Alteração" : "Cadastro"%> de Produto</h1>
     </div>
-
-    
-    
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <div>
-                     <a class="btn btn-secondary" href="ServletProdutoFC?acao=listar">Voltar</a>
-                </div>
+                <a class="btn btn-secondary" href="ServletProdutoFC?acao=listar">Voltar</a>
+            </div>
             <form class="form-container" action="ServletProdutoFC" method="post">
                 <input type="hidden" name="acao" value="<%=acao%>">
                 <% if (produto != null) { %>
                     <input type="hidden" name="id" value="<%=produto.getIdProduto()%>">
                 <% } %>
-
                 <div class="mb-3">
                     <label class="form-label" for="nome">Nome</label>
                     <input class="form-control" type="text" name="nome" value="<%=produto != null ? produto.getNome() : ""%>" required>
@@ -78,17 +73,10 @@
                     <label class="form-label" for="precoVenda">Preço de Venda</label>
                     <input class="form-control" type="text" name="precoVenda" value="<%=produto != null ? produto.getPrecoVenda() : ""%>" required>
                 </div>
-                
-             
-                
                 <div>
-                   
                     <input class="btn btn-primary" type="submit" value="<%=acao == "incluir" ? "Cadastrar" : "Alterar"%>">
                 </div>
-              
-                  
             </form>
-              
         </div>
     </div>
 </body>
